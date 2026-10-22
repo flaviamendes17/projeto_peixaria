@@ -1,0 +1,31 @@
+/* Estilos novos para telas e estados adicionados ao site. */
+.card-polaroid.indisponivel { filter: grayscale(1); opacity: 0.62; }
+.selo.indisponivel { background: #555; color: #fff; }
+.pagina-extra { width: min(1000px, calc(100% - 32px)); margin: 2rem auto; }
+.pagina-extra .bloco-extra { background: #fff; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; box-shadow: 0 4px 14px rgba(11, 59, 92, .12); }
+.pagina-extra h1, .pagina-extra h2 { color: #0b3b5c; }
+.pagina-extra textarea, .pagina-extra input[type="text"], .pagina-extra input[type="password"], .pagina-extra input[readonly] { width: 100%; }
+.pagina-extra .resultado-cifra { white-space: pre; overflow-x: auto; font-family: monospace; }
+.rodape-contato { display: flex; align-items: center; justify-content: flex-end; gap: 12px; min-height: 100%; text-align: right; }
+.rodape-contato a { flex: 0 0 auto; line-height: 0; }
+.rodape-contato img { display: block; }
+.rodape-seguranca { margin: 0; text-align: center; }
+.login-page { min-height: 100vh; display: flex; flex-direction: column; }
+.login-main { width: min(760px, calc(100% - 32px)); flex: 1 0 auto; display: flex; align-items: center; padding-top: 2rem; padding-bottom: 2rem; }
+.login-card { width: 100%; margin: 0; }
+.login-card form { max-width: none; margin: 0; padding: 0; border: 0; box-shadow: none; }
+.login-card h1 { margin-bottom: .75rem; }
+.login-card form .form-control { min-height: 44px; }
+.login-page footer { margin-top: auto; width: 100%; }
+.painel-admin { padding-bottom: 7rem; }
+.barra-salvar-fixa { position: fixed; z-index: 1030; right: 0; bottom: 0; left: 0; display: flex; justify-content: center; padding: .75rem 1rem max(.75rem, env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .96); border-top: 1px solid rgba(11, 59, 92, .16); box-shadow: 0 -4px 18px rgba(11, 59, 92, .12); backdrop-filter: blur(8px); }
+.barra-salvar-fixa .btn { width: min(100%, 340px); min-height: 46px; font-weight: 600; }
+@media (max-width: 767.98px) {
+  .rodape-contato { justify-content: flex-start; text-align: left; }
+  .login-main { align-items: flex-start; }
+  .painel-admin { padding-bottom: 6.5rem; }
+  .barra-salvar-fixa { padding-right: max(1rem, env(safe-area-inset-right)); padding-left: max(1rem, env(safe-area-inset-left)); }
+  .barra-salvar-fixa .btn { width: 100%; }
+}
+.cursor-water { position: fixed; width: 90px; height: 90px; border-radius: 50%; border: 2px solid rgba(0,174,255,.35); pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); backdrop-filter: blur(2px); box-shadow: 0 0 20px rgba(0,174,255,.25), 0 0 40px rgba(0,174,255,.15); animation: waterWave 2s infinite ease-out; }
+@keyframes waterWave { 0% { transform: translate(-50%,-50%) scale(.9); opacity: .8; } 100% { transform: translate(-50%,-50%) scale(1.4); opacity: 0; } }
